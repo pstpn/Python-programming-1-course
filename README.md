@@ -1,2 +1,2 @@
 # Python
- My works made in python
+ My laboratory works on Python
