@@ -1,26 +1,7 @@
-# Информация о программе:
-# 
-# Программа рисует все выпуклые четырехугольники, введенные графически или вручную
-# Реализован в рамках курса по "Программированию на Python".
-# 
-# Автор: Постнов Степан Андреевич, студент МГТУ им. Н.Э.Баумана
-
-
-from calendar import c
-from cmath import pi
-from os import stat
-import re
 from secrets import choice
-from tracemalloc import start
-from turtle import goto, heading, right, width
 from PyQt5 import QtWidgets, QtCore, QtGui
-from PyQt5.QtWidgets import QTableWidget, QTableWidgetItem, QGridLayout, QWidget
 from PyQt5.QtCore import Qt
-from PyQt5.QtGui import QPixmap
-from PIL.ImageQt import ImageQt
-from PIL import Image
 from MyWindow_4 import Ui_MainWindow
-import numpy as np
 import sys
 
 

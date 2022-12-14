@@ -1,20 +1,6 @@
-# Информация о программе:
-# 
-# Стеганография. Метод наименее значащих битов для сокрытия информации в изображении (формат - .bmp)
-# Реализована в рамках курса по "Программированию на Python".
-# 
-# Автор: Постнов Степан Андреевич, студент МГТУ им. Н.Э.Баумана
-
-
-from calendar import c
-from cmath import pi
-from os import stat
-from tracemalloc import start
-from turtle import goto, heading, width
 from PyQt5 import QtWidgets
 from PyQt5.QtCore import Qt
 from PyQt5.QtGui import QPixmap
-from PIL.ImageQt import ImageQt
 from PIL import Image
 from MyWindow import Ui_MainWindow
 import numpy as np

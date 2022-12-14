@@ -1,13 +1,4 @@
-# Информация о программе:
-# 
-# Калькулятор, выполняющий операции сложения и вычитания чисел в пятиричной системе счисления.
-# Реализован в рамках курса по "Программированию на Python".
-# 
-# Автор: Постнов Степан Андреевич, студент МГТУ им. Н.Э.Баумана
-
-
 import tkinter as tk
-from tkinter.messagebox import showinfo
 from secure import secure_five
 
 window = tk.Tk()
@@ -19,12 +10,6 @@ window.geometry('1024x500+100+200')
 def resize():
     window.update_idletasks()
     window.geometry('1024x810+0+0')
-
-
-def info():
-    showinfo('Информация о создателе', 'Автор:\nПостнов Степан Андреевич, студент МГТУ им. Н.Э.Баумана.\nСведения о программе:'
-                                       '\nКалькулятор, выполняющий операции сложения и вычитания чисел в пятиричной '
-                                       'системе счисления.')
 
 
 def active(event):
@@ -281,7 +266,6 @@ motion_menu.add_command(label='Вычитание', command=diff)
 motion_menu.add_command(label='Очистить все поля', command=clear_all)
 
 menu.add_cascade(label='Заданные действия', menu=motion_menu)
-menu.add_command(label='Инфо', command=info)
 menu.add_command(label='Выход', command=window.destroy)
 
 window.mainloop()

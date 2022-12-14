@@ -1,18 +1,9 @@
-# Информация о программе:
-# 
-# Программа позволяет найти корни функции, заданной вручную, на отрезке методом секущих с различными параметрами.
-# Также программа может построить график введенной функции и указать корни, экстремумы и перегибы.
-# Реализована в рамках курса по "Программированию на Python".
-# 
-# Автор: Постнов Степан Андреевич, студент МГТУ им. Н.Э.Баумана
-
-
 import tkinter as tk
 from tkinter.ttk import Treeview, Scrollbar, Style
-from tkinter.messagebox import showinfo
 from math import *
 import matplotlib.pyplot as plt
 import numpy as np
+
 
 window = tk.Tk()
 window['bg'] = 'gray22'
@@ -25,12 +16,6 @@ sqrs = False
 
 tk.Label(text='Здравствуй, пользователь!', foreground='white', background='gray22',
          font=('Comic Sans MS', 20, 'bold')).pack()
-
-
-def info():
-    showinfo('Информация о создателе', 'Автор:\nПостнов Степан Андреевич, студент МГТУ им. Н.Э.Баумана.\nСведения о программе:'
-                                       '\nПрограмма позволяет найти корни функции, заданной вручную, на отрезке с различными параметрами.'
-                                       'Также программа может построить график введенной функции и указать корни, экстремумы и перегибы.')
 
 
 def table_new():
@@ -316,7 +301,6 @@ menu = tk.Menu(window)
 window.config(menu=menu)
 
 menu.add_command(label='Очистить все поля', command=clear_all)
-menu.add_command(label='Инфо', command=info)
 menu.add_command(label='Выход', command=window.destroy)
 
 window.bind('Entry', tk.Entry.tk_focusNext(entry_func).focus())
